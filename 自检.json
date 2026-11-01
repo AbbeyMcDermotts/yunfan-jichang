@@ -1,0 +1,108 @@
+{
+  "variant": "B",
+  "site": "yunfan",
+  "repo": "yunfan-jichang",
+  "source_readme": "/Users/tanyazhong/projects/venture-hub/项目/P-016-G-GitHub星标积累/机场仓/上架2026-11-01/yunfan-jichang/README.md",
+  "seed": "B2026nfan",
+  "date_offset_days": 2,
+  "sentence_check": {
+    "method": "B版分句中与A版逐字相同的句数 / B版有效分句数",
+    "a_sentence_count": 39,
+    "b_sentence_count": 47,
+    "identical_sentence_count": 1,
+    "identical_sentence_ratio": 0.021277,
+    "threshold": 0.3,
+    "identical_sentences": [
+      "| 倍率 | 直连 1x · AWS 2x · IX 3x |"
+    ]
+  },
+  "numeric_check": {
+    "method": "套餐表逐字保留，并抽取A版套餐表全部数字值核对B版；测试日期按规范偏移，不参与价量一致性",
+    "a_token_count": 73,
+    "b_token_count": 80,
+    "protected_table_values": [
+      "100G",
+      "118",
+      "16",
+      "1TB",
+      "200G",
+      "208",
+      "298",
+      "2TB",
+      "3",
+      "300G",
+      "34",
+      "3TB",
+      "4",
+      "40",
+      "5",
+      "500G",
+      "60",
+      "8",
+      "9"
+    ],
+    "all_protected_values_present": true,
+    "missing_protected_values": [],
+    "new_values_outside_A": [
+      "13"
+    ]
+  },
+  "speed_variant": {
+    "rows": 73,
+    "changed_fields": {
+      "delay_ms": 73,
+      "https_ms": 73,
+      "avg_mb": 72,
+      "peak_mb": 73,
+      "samples_mb": 730
+    },
+    "render_check": {
+      "output": "/Users/tanyazhong/projects/venture-hub/项目/P-016-G-GitHub星标积累/机场仓/账号B套材料/yunfan-jichang/assets/speed.png",
+      "input": "/Users/tanyazhong/projects/venture-hub/项目/P-016-G-GitHub星标积累/机场仓/账号B套材料/yunfan-jichang/data/speedtable.enriched.json",
+      "scale": 2,
+      "rows": 73,
+      "columns": [
+        "序号",
+        "节点名称",
+        "类型",
+        "平均速度",
+        "最高速度",
+        "TLS RTT",
+        "HTTPS延迟",
+        "Netflix",
+        "YouTube",
+        "Bilibili",
+        "HBO Max",
+        "Disney+",
+        "TVBAnywhere",
+        "Bahamut",
+        "Hulu.JP",
+        "TikTok",
+        "ChatGPT",
+        "Spotify",
+        "Steam",
+        "UDP类型",
+        "每秒速度"
+      ],
+      "clipped_cells": 0,
+      "clipped_footer": 0,
+      "bars": 730,
+      "css_width": 2710,
+      "css_height": 4713.765625,
+      "external_requests": 0
+    }
+  },
+  "checks": {
+    "same_sentence_ratio_below_30_percent": true,
+    "package_numeric_facts_preserved": true,
+    "aff_exact_and_clickable_twice": true,
+    "no_bare_url_in_visible_text": true,
+    "repo_meta_ascii": true,
+    "banned_words_absent": true,
+    "speed_png_exists": true,
+    "speed_rows_match": true,
+    "seed_recorded": true,
+    "test_date_shifted_1_or_2_days": true
+  },
+  "pass": true
+}
